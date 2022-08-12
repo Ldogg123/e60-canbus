@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>545i Dashboard</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/scripts/gauge.min.js"></script>
+
+</head>
+
+<body>
+    <canvas data-type="radial-gauge" data-width="400" data-height="400" data-units="°C" data-title="false"
+        data-value="0" data-min-value="0" data-max-value="140"
+        data-major-ticks="0,20,40,60,80,100,120,140" data-minor-ticks="2" data-stroke-ticks="false"
+        data-highlights='[
+        { "from": 0, "to": 85, "color": "rgba(135,206,250,.25)" },
+        { "from": 85, "to": 108, "color": "rgba(0,128,0,.25)" },
+        { "from": 108, "to": 140, "color": "rgba(255,0,0,.25)" }
+    ]' data-color-plate="#222" data-color-major-ticks="#f5f5f5" data-color-minor-ticks="#ddd" data-color-title="#fff"
+        data-color-units="#ccc" data-color-numbers="#eee" data-color-needle-start="rgba(240, 128, 128, 1)"
+        data-color-needle-end="rgba(255, 160, 122, .9)" data-value-box="true" data-animation-rule="bounce"
+        data-animation-duration="500" data-font-value="Led" data-animated-value="true"> </canvas>
+    <canvas data-type="radial-gauge" data-width="400" data-height="400" data-units="RPM" data-title="false"
+        data-value="0" data-min-value="0" data-max-value="8000"
+        data-major-ticks="0,1000,2000,3000,4000,5000,6000,7000,8000" data-minor-ticks="2" data-stroke-ticks="false"
+        data-highlights='[
+    { "from": 6000, "to": 7000, "color": "rgba(255,255,0,.25)" },
+    { "from": 7000, "to": 8000, "color": "rgba(255,0,0,.25)" }
+]'     data-color-plate="#222" data-color-major-ticks="#f5f5f5" data-color-minor-ticks="#ddd" data-color-title="#fff"
+        data-color-units="#ccc" data-color-numbers="#eee" data-color-needle-start="rgba(240, 128, 128, 1)"
+        data-color-needle-end="rgba(255, 160, 122, .9)" data-value-box="true" data-animation-rule="bounce"
+        data-animation-duration="500" data-font-value="Led" data-animated-value="true"> </canvas>
+    <script src="/index.js"></script>
+</body>
+
+</html>
